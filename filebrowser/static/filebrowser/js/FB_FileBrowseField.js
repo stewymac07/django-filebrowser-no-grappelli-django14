@@ -10,7 +10,8 @@ function FileSubmit(FilePath, FileURL, ThumbURL, FileType) {
     previewlink = opener.document.getElementById(previewlink_id);
     previewimage = opener.document.getElementById(previewimage_id);
     // set new value for input field
-    input.value = FilePath;
+    // input.value = FilePath;
+    input.value = '/site_media/media/' + FilePath;
     
     if (ThumbURL && FileType != "") {
         // selected file is an image and thumbnail is available:
